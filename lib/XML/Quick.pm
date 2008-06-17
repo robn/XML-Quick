@@ -311,13 +311,11 @@ wrap an XML string with another tag.
 
 =back
 
-=head1 DEPENDENCIES
-
-Requires Scalar::Util
-
 =head1 AUTHOR
 
-Robert Norris (Robert.Norris@its.monash.edu.au)
+Robert Norris (rob@cataclysm.cx)
+
+YAMASHINA Hio fixed a bug where C<xml> would modify the caller's data
 
 =head1 BUGS AND LIMITATIONS
 
@@ -338,6 +336,8 @@ welcome.
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005 Monash University. All Rights Reserved. This program is free
-software; you can redistribute it and/or modify it under the same terms as Perl
-itself.
+Copyright (c) 2005-2006 Monash University.
+Copyright (c) 2008 Robert Norris
+
+This program is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
