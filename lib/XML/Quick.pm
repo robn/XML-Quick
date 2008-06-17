@@ -27,8 +27,14 @@ sub xml {
     # handle undef properly
     $data = '' if not defined $data;
     
-    # make sure we have some options, even if we don't
-    $opts = {} if not defined $opts or reftype $opts ne 'HASH';
+    if (not defined $opts or reftype $opts ne 'HASH') {
+        # empty options hash if they didn't provide one
+        $opts = {};
+    }
+    else {
+        # shallow copy the opts so we don't modify the callers
+        $opts = {%$opts};
+    }
 
     # escape by default
     $opts->{escape} = 1 if not exists $opts->{escape};
@@ -45,12 +51,10 @@ sub xml {
         # move attrs/cdata into opts as necessary
         if(exists $data->{_attrs}) {
             $opts->{attrs} = $data->{_attrs} if not exists $opts->{attrs};
-            delete $data->{_attrs};
         }
 
         if(exists $data->{_cdata}) {
             $opts->{cdata} = $data->{_cdata} if not exists $opts->{cdata};
-            delete $data->{cdata};
         }
         
         # loop over the keys
