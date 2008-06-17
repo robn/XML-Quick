@@ -8,7 +8,6 @@ my $builder = Module::Build->new(
     dist_author         => 'Robert Norris <Robert.Norris@its.monash.edu.au>',
     dist_version_from   => 'lib/XML/Quick.pm',
     requires => {
-        'Perl6::Export::Attrs' => 0,
         'Scalar::Util' => 0,
     },
     build_requires => {

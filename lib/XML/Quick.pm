@@ -3,8 +3,12 @@ package XML::Quick;
 use warnings;
 use strict;
 
-use Perl6::Export::Attrs;
 use Scalar::Util qw(reftype);
+use Exporter;
+
+use base qw(Exporter);
+
+our @EXPORT = qw(xml);
 
 our $VERSION = '0.03';
 
@@ -17,7 +21,7 @@ sub _escape($) {
     return $cdata;
 };
 
-sub xml :Export(:DEFAULT) {
+sub xml {
     my ($data, $opts) = @_;
 
     # handle undef properly
@@ -305,7 +309,7 @@ wrap an XML string with another tag.
 
 =head1 DEPENDENCIES
 
-Requires Perl6::Export::Attrs, Scalar::Util
+Requires Scalar::Util
 
 =head1 AUTHOR
 
