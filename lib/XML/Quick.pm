@@ -6,7 +6,7 @@ use strict;
 use Perl6::Export::Attrs;
 use Scalar::Util qw(reftype);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 # cdata escaping
 sub _escape($) {
