@@ -1,0 +1,33 @@
+
+NAME
+    XML::Quick - Generate XML from hashes (and other data)
+
+SYNOPSIS
+        use XML::Quick;
+
+        $xml = xml($data);
+    
+        $xml = xml($data, { ... });
+
+DESCRIPTION
+    This module generates XML from Perl data (typically a hash). It tries
+    hard to produce something sane no matter what you pass it. It probably
+    fails.
+
+INSTALL
+        perl Build.PL
+        ./Build
+        ./Build test
+        ./Build install
+
+DEPENDENCIES
+    Requires Perl6::Export::Attrs, Scalar::Util
+
+AUTHOR
+    Robert Norris (Robert.Norris@its.monash.edu.au)
+
+COPYRIGHT
+    Copyright (c) 2005 Monash University. All Rights Reserved. This program
+    is free software; you can redistribute it and/or modify it under the
+    same terms as Perl itself.
+
