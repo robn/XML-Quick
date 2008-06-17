@@ -5,7 +5,7 @@ use Module::Build;
 my $builder = Module::Build->new(
     module_name         => 'XML::Quick',
     license             => 'perl',
-    dist_author         => 'Robert Norris <Robert.Norris@its.monash.edu.au>',
+    dist_author         => 'Robert Norris <rob@cataclysm.cx>',
     dist_version_from   => 'lib/XML/Quick.pm',
     requires => {
         'Scalar::Util' => 0,
