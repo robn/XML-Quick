@@ -3,8 +3,10 @@
 use warnings;
 use strict;
 
-use Test::More 'no_plan';
+use Test::More;
 use XML::Quick;
+
+plan tests => 7;
 
 my @tests = qw(
     &   &amp;

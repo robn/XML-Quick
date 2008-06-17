@@ -3,11 +3,13 @@
 use warnings;
 use strict;
 
-use Test::More 'no_plan';
+use Test::More;
 use XML::Quick;
 
-eval "use Test::XML";
+eval { use Test::XML };
 plan skip_all => "Test::XML required for testing XML generation" if $@;
+
+plan tests => 14;
 
 my @tests = (
     { 'tag' => 'value' }                    => qq(<tag>value</tag>),
