@@ -336,7 +336,8 @@ welcome.
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005-2006 Monash University.
+Copyright (c) 2005-2006 Monash University
+
 Copyright (c) 2008 Robert Norris
 
 This program is free software; you can redistribute it and/or modify it under
