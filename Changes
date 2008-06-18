@@ -10,3 +10,6 @@ Revision history for XML-Quick
          - No longer modify data from caller [RT#22020]
          - Remove dependency on Perl6::Export::Attrs
          - Fix tests to declare plans properly
+
+0.04    18 June 2008
+         - Require Test::XML for build so the tests work
