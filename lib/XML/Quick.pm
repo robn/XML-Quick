@@ -10,7 +10,7 @@ use base qw(Exporter);
 
 our @EXPORT = qw(xml);
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 # cdata escaping
 sub _escape($) {
