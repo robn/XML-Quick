@@ -6,12 +6,13 @@ use strict;
 use Test::More;
 use XML::Quick;
 
-plan tests => 7;
+plan tests => 8;
 
 my @tests = qw(
     &   &amp;
     <   &lt;
     >   &gt;
+    "   &quot;
 
     abcdefghijklmnopqrstuvwxyz  abcdefghijklmnopqrstuvwxyz
     ABCDEFGHIJKLMNOPQRSTUVWXYZ  ABCDEFGHIJKLMNOPQRSTUVWXYZ
