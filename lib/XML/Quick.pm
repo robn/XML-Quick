@@ -318,9 +318,12 @@ wrap an XML string with another tag.
 
 =head1 AUTHOR
 
-Robert Norris (rob@cataclysm.cx)
+Robert Norris E<lt>rob@eatenbyagrue.orgE<gt>
 
 YAMASHINA Hio fixed a bug where C<xml> would modify the caller's data
+
+Dawid Joubert suggested escaping non-ASCII characters and provided a patch
+(though I did it a little bit differently to how he suggested)
 
 =head1 BUGS AND LIMITATIONS
 
@@ -343,7 +346,7 @@ welcome.
 
 Copyright (c) 2005-2006 Monash University
 
-Copyright (c) 2008 Robert Norris
+Copyright (c) 2008-2010 Robert Norris
 
 This program is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
+the terms of the Artistic License v2.
