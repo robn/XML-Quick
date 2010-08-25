@@ -19,6 +19,7 @@ sub _escape($) {
     $cdata =~ s/&/&amp;/g;
     $cdata =~ s/</&lt;/g;
     $cdata =~ s/>/&gt;/g;
+    $cdata =~ s/"/&quot;/g;
 
     $cdata =~ s/([^\x20-\x7E])/'&#' . ord($1) . ';'/ge;
 
