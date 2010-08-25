@@ -15,9 +15,13 @@ our $VERSION = '0.04';
 # cdata escaping
 sub _escape($) {
     my ($cdata) = @_;
+
     $cdata =~ s/&/&amp;/g;
     $cdata =~ s/</&lt;/g;
     $cdata =~ s/>/&gt;/g;
+
+    $cdata =~ s/([^\x20-\x7E])/'&#' . ord($1) . ';'/ge;
+
     return $cdata;
 };
 
