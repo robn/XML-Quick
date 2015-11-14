@@ -225,6 +225,8 @@ Robert Norris <rob@eatenbyagrue.org>
 - YAMASHINA Hio fixed a bug where `xml` would modify the caller's data
 - Dawid Joubert suggested escaping non-ASCII characters and provided a patch
 (though I did it a little bit differently to how he suggested)
+- Peter Eichman fixed a bug where single quotes in attribute values were not
+being escaped.
 
 # COPYRIGHT AND LICENSE
 

@@ -100,9 +100,9 @@ sub xml {
         if($opts->{attrs}) {
             for my $key (keys %{$opts->{attrs}}) {
                 my $val = $opts->{attrs}->{$key};
-                $val =~ s/'/&apos;/;
+                $val =~ s/'/&apos;/g;
 
-                $wrap .= " $key='$opts->{attrs}->{$key}'";
+                $wrap .= " $key='$val'";
             }
         }
 
@@ -368,6 +368,11 @@ YAMASHINA Hio fixed a bug where C<xml> would modify the caller's data
 
 Dawid Joubert suggested escaping non-ASCII characters and provided a patch
 (though I did it a little bit differently to how he suggested)
+
+=item *
+
+Peter Eichman fixed a bug where single quotes in attribute values were not
+being escaped.
 
 =back
 
