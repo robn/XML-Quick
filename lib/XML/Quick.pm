@@ -1,5 +1,7 @@
 package XML::Quick;
 
+# ABSTRACT: Generate XML from hashes (and other data)
+
 use warnings;
 use strict;
 
@@ -9,8 +11,6 @@ use Exporter;
 use base qw(Exporter);
 
 our @EXPORT = qw(xml);
-
-our $VERSION = '0.05';
 
 # cdata escaping
 sub _escape($) {
@@ -130,7 +130,9 @@ sub xml {
 
 1;
 
-__END__
+=pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -316,15 +318,6 @@ wrap an XML string with another tag.
 
 =back
 
-=head1 AUTHOR
-
-Robert Norris E<lt>rob@eatenbyagrue.orgE<gt>
-
-YAMASHINA Hio fixed a bug where C<xml> would modify the caller's data
-
-Dawid Joubert suggested escaping non-ASCII characters and provided a patch
-(though I did it a little bit differently to how he suggested)
-
 =head1 BUGS AND LIMITATIONS
 
 Because Perl hash keys get randomised, there's really no guarantee the
@@ -342,11 +335,45 @@ tags is entirely outside the scope of what the module is designed for.
 There are probably bugs. This kind of thing is an inexact science. Feedback
 welcome.
 
-=head1 COPYRIGHT
+=head1 SUPPORT
 
-Copyright (c) 2005-2006 Monash University
+=head2 Bugs / Feature Requests
 
-Copyright (c) 2008-2010 Robert Norris
+Please report any bugs or feature requests through the issue tracker
+at L<https://github.com/robn/XML-Quick/issues>.
+You will be notified automatically of any progress on your issue.
 
-This program is free software; you can redistribute it and/or modify it under
-the terms of the Artistic License v2.
+=head2 Source Code
+
+This is open source software. The code repository is available for
+public review and contribution under the terms of the license.
+
+L<https://github.com/robn/XML-Quick>
+
+  git clone https://github.com/robn/XML-Quick.git
+
+=head1 AUTHOR
+
+Robert Norris <rob@eatenbyagrue.org>
+
+=head1 CONTRIBUTORS
+
+=over 4
+
+=item *
+
+YAMASHINA Hio fixed a bug where C<xml> would modify the caller's data
+
+=item *
+
+Dawid Joubert suggested escaping non-ASCII characters and provided a patch
+(though I did it a little bit differently to how he suggested)
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2005-2006 Monash University, (c) 2008-2015 by Robert Norris.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
