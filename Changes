@@ -4,6 +4,7 @@
 
 0.06      2015-11-14 14:28:19+11:00 Australia/Melbourne
 - Convert to Dist::Zilla
+- Escape single quotes in attributes [RT#108857]
 
 0.05    25 August 2010
 - Escape non-ASCII characters as numerics entities
