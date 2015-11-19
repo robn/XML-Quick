@@ -2,6 +2,7 @@ package XML::Quick;
 
 # ABSTRACT: Generate XML from hashes (and other data)
 
+use 5.008_001;
 use warnings;
 use strict;
 

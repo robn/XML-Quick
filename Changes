@@ -1,4 +1,6 @@
 {{$NEXT}}
+0.07
+- Require Perl 5.8.1
 
 0.06      2015-11-14 14:28:19+11:00 Australia/Melbourne
 - Convert to Dist::Zilla
