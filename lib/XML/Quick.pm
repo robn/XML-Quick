@@ -135,6 +135,8 @@ sub xml {
 
 =encoding UTF-8
 
+=for markdown [![Build Status](https://secure.travis-ci.org/robn/XML-Quick.png)](http://travis-ci.org/robn/XML-Quick)
+
 =head1 NAME
 
 XML::Quick - Generate XML from hashes (and other data)

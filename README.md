@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/robn/XML-Quick.png)](http://travis-ci.org/robn/XML-Quick)
+
 # NAME
 
 XML::Quick - Generate XML from hashes (and other data)
